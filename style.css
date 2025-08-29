@@ -1,0 +1,244 @@
+ /* Reset */
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ body {
+     color: white;
+     background-color: rgb(8, 8, 40);
+     font-family: "Poppins", sans-serif;
+ }
+
+ /* Navbar */
+ nav {
+     position: relative;
+     top: 5px;
+     left: 0;
+     right: 0;
+     z-index: 1;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     height: 65px;
+     /*background-color: #000;*/
+     opacity: 0.95;
+
+ }
+
+ nav ul {
+     display: flex;
+     justify-content: center;
+ }
+
+ nav ul li {
+     list-style: none;
+     margin: 0 23px;
+ }
+
+ nav ul li a {
+     text-decoration: none;
+     color: white;
+     padding: 2px 8px;
+     border-radius: 5px;
+
+ }
+
+ nav ul li a:hover {
+     color: rgb(0, 0, 0);
+     background-color: rgb(255, 255, 255);
+ }
+
+ .logo {
+     font-size: 1.35rem;
+ }
+
+
+ /* first section */
+ #home {
+     display: flex;
+     flex-direction: column;
+     padding: 3px 5%;
+     height: 675px;
+     justify-content: center;
+     align-items: center;
+ }
+
+ #home div img {
+     width: 200px;
+     height: auto;
+     border-radius: 50%;
+     border: 2px solid #000;
+ }
+
+ #name {
+     padding-top: 30px;
+     font-size: 25px;
+     font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+     color: rgb(216, 204, 204);
+ }
+
+ #home h3 {
+     padding: 20px;
+     font-size: 20px;
+     text-decoration: none;
+     font-weight: bold;
+     font-family: 'Courier New', Courier, monospace;
+ }
+
+ #home::before {
+     content: "";
+     position: fixed;
+     /*absolute*/
+     background: url('images/background.png');
+     height: 120%;
+     width: 100%;
+     z-index: -1;
+     background-position: center;
+     /* Focus on the center ; */
+     background-size: cover
+         /* Ensure the image covers the container */
+ }
+
+
+
+ #about  {
+     padding-top: 50px;
+     background-color: rgb(231, 228, 239);
+     color: black;
+ }
+
+ #about .about1 {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ #about div > h1 {
+     display: flex;
+     justify-content: center;
+     padding-top: 10px;
+ }
+ #about div p{
+    padding: 20px;
+ }
+
+ .container {
+     display: grid;  
+     padding: 50px;
+     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+     gap: 20px;
+
+ }
+
+ .item {
+
+     text-align: center;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+     padding: 10px;
+     border-radius: 20px;
+     background-color: white;
+ }
+ .item h3{
+    font-weight:450;
+    color: black;
+    font-size:medium;
+    font-family:Poppins;
+ } 
+ .item p{
+    color: rgb(16, 16, 16);
+    padding-top: 5px;
+    font-size: small;
+ }
+
+ .item img {
+     height: 60px;
+     width: 60px;
+     margin: 0 auto 15px;
+     display: block;
+
+ }
+
+ .item:hover {
+     transform: scale(0.98);
+     transition: transform 0.3s ease;
+
+ }
+
+ .item img:hover {
+     transform: scale(1.2);
+     transition: transform 0.4s ease;
+ }
+ /* projects */
+ #Projects  {
+     padding-top: 50px;
+     background-color: rgb(249, 247, 251);
+     color: black;
+ }
+
+ #Projects .Projects_heading {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ #Projects div > h1 {
+     display: flex;
+     justify-content: center;
+     padding-top: 10px;
+ }
+ #Projects div p{
+    padding: 20px;
+ } 
+ /*--------------------------*/
+
+  .Projects_container{
+     display: grid;  
+     padding: 50px;
+     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+     gap: 20px;
+ }
+ .Projects_item {
+
+     text-align: center;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+     
+     border-radius: 20px;
+     background-color: white;
+     
+ }
+ .Projects_item h3{
+    font-weight:450;
+    color: black;
+    font-size:medium;
+    font-family:Poppins;
+ } 
+ .Projects_item p{
+    color: rgb(16, 16, 16);
+    padding-top: 5px;
+    font-size: small;
+ }
+
+ .Projects_item img {
+    padding-top: 5%;
+     height: 200px;
+     width: 200px;
+     margin: 0 auto 15px;
+     display: block;
+     
+     
+
+ }
+
+ .Projects_item:hover {
+     transform: scale(0.98);
+     transition: transform 0.3s ease;
+
+ }
+
+ .Projects_item img:hover {
+     transform: scale(1.1);
+     transition: transform 0.3s ease;
+ }
